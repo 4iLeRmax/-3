@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+  position: relative;
+}
+.bg1, .bg2{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bg1{
+  height: 72%;
+  border-radius: 45% 0 0 45%;
+  z-index: -2;
+}
+.bg2{
+  height: 94%;
+  z-index: -1;
+}
+nav{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.logo{
+  margin-right: 100px;
+}
+.navLinks{
+  display: flex;
+  margin-right: 20px;
+}
+.navLinks li{
+  list-style: none;
+  margin: 0 20px;
+}
+.navLinks .active{
+  color: #F16214;
+}
+.navLinks li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+}
+.reg{
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background: #F16214;
+  padding: 7px 17px;
+  border-radius: 20px;
+  transition: color .25s;
+}
+.reg:hover{
+  color: #000;
+}
+
+.content1{
+  max-width: 550px;
+  margin-top: 80px;
+}
+.content1 h1{
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 65px;
+  margin-bottom: 15px;
+}
+.content1 p{
+  font-size: 13px;
+  color: #888;
+}
+.btn{
+  width: 150px;
+  margin: 30px 0;
+}
+
+
+.socialIcons{
+  display: flex;
+  align-items: center;
+}
+.socialIcons a{
+  margin-right: 20px;
+}
+.socialIcons a ion-icon{
+  padding: 15px;
+  color: #F16214;
+  border-radius: 50%;
+  background: rgba(241, 98, 20, 0.15);
+}
+
+
+.feature{
+  display: flex;
+  margin: 20px auto 0;
+  justify-content: center;
+  width: 80%;
+  columns: 3;
+  background: #FFFFFF;
+  box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 60px 0px;
+  padding: 25px;
+}
+.item{
+  text-align: center;
+  margin: 0 60px;
+}
+.item .icon{
+  margin-bottom: 5px;
+}
+.item .icon ion-icon{
+  color: #fff;
+  background: #F16214;
+  padding: 10px;
+  border-radius: 50%;
+}
+.item .title{
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.item .text{
+  font-size: 10px;
+  font-weight: 400;
+  color: #888;
+}
+
+
+
+/*----How to Work----*/
+#HowToWork{
+  width: 100%;
+  padding: 0 10%;
+  position: relative;
+  display: flex;
+}
+.bg3{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 55%;
+}
+.content2{
+  margin-top: 120px;
+  margin-left: 50%;
+}
+.OrangeText{
+  font-size: 12px;
+  color: #F16214;
+  margin-bottom: 5px;
+}
+.TitleText{
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 50px;
+}
+.content2 p{
+  font-size: 14px;
+  color: #888;
+  line-height: 22px;
+}
+
+
+
+/*----Services----*/
+#Services{
+  text-align: center;
+  margin-top: 130px;
+  padding: 0 10%;
+}
+.cards{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.card{
+  box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 60px 0px;
+  padding: 60px 20px;
+  margin: 0 30px;
+  cursor: pointer;
+  transition: .25s;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.card .icon{
+  margin-bottom: 35px;
+}
+.card .icon ion-icon{
+  padding: 25px;
+  font-size: 25px;
+  color: #F16214;
+  background: rgba(241, 98, 20, 0.15);
+  border-radius: 50%;
+}
+.card .title{
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.card .text{
+  font-size: 14px;
+  color: #888;
+  line-height: 24px;
+}
+
+
+
+/*----Product----*/
+#Product{
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 200px;
+}
+.FoodCards{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px;
+}
+.cardFood{
+  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07); */
+  box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 50px 0px;
+  display: inline-block;
+  width: 350px;
+  transition: .5s;
+}
+.cardFood:hover{
+  transform: scale(1.05);
+}
+.cardFood img{
+  border-radius: 50px 0px 0px 0px;
+  width: 100%;
+}
+.mainText{
+  width: 100%;
+  display: flex;
+  columns: 2;
+}
+.mainText .left{
+  flex-basis: 70%;
+  text-align: left;
+  display: inline-block;
+  margin: 15px 0 30px 20px;
+}
+.mainText .right{
+  flex-basis: 30%;
+  text-align: right;
+  display: inline-block;
+  margin: 30px 20px;
+}
+.mainText .left h1{
+  font-size: 20px;
+}
+.mainText .left a{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #F16214;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 50px;
+  margin: 20px 0;
+  transition: color .5s;
+}
+.mainText .left a:hover{
+  color: #000;
+}
+.mainText .right div ion-icon{
+  width: 12px;
+  margin-right: 4px;
+  color: #F16214;
+}
+.mainText .right div span{
+  font-size: 12px;
+  font-weight: 700;
+}
+.mainText .right h2{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+#Product .btn{
+  width: 200px;
+  margin-top: 60px;
+  border-radius: 50px;
+}
+
+
+
+/*----App----*/
+#App{
+  padding: 0 10%;
+  position: relative;
+}
+.bg4{
+  margin-top: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1200px;
+  height: 400px;
+  border-radius: 60px 0;
+  position: absolute;
+  z-index: -1;
+}
+#App .phone1,.phone2{
+  position: absolute;
+  z-index: 1;
+}
+#App .phone1{
+  top: 0;
+  right: 20%;
+  transform: translate(-25%, -10%);
+}
+#App .phone2{
+  top: 0;
+  right: 0;
+  transform: translate(-25%, -5%);
+}
+#App .row{
+  position: relative;
+}
+#App .row .main{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-5%, 75%);
+}
+#App .row .main h1{
+  font-size: 40px;
+  line-height: 49px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#App .row .main .apps{
+  display: flex;
+}
+#App .row .main .apps a img{
+  width: 250px;
+  margin-right: 20px;
+  transition: transform .25s;
+}
+#App .row .main .apps a img:hover{
+  transform: scale(.95);
+}
+
+
+
+/*----Clients----*/
+#Clients{
+  margin-top: 1000px;
+  padding: 0 10%;
+  background-image: url(./img/bg5.png);
+  background-position-y: -10px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.content3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.content3 .left{
+  text-align: center;
+}
+.content3 .left .profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.content3 .left .profile img{
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.content3 .left .profile .info{
+  text-align: left;
+}
+.content3 .left .profile .info h1{
+  font-size: 15px;
+}
+.content3 .left .profile .info p{
+  font-size: 13px;
+  font-weight: 400;
+  color: #888;
+}
+.content3 .left p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #888;
+}
+.content3 .left .arrow1 ion-icon{
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #888;
+  color: #F16214;
+  border-radius: 10px;
+  margin: 40px 15px;
+}
+.content3 .left .arrow2 ion-icon{
+  padding: 10px;
+  background: #F16214;
+  color: #fff;
+  border-radius: 10px;
+  margin: 40px 15px;
+}
+
+
+
+
+/*----Burger----*/
+#Burger{
+  padding: 0 10%;
+  background-image: url(./img/bbg.png);
+  background-size: 69%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#Burger .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Burger .row .right{
+  margin-right: 10%;
+}
+#Burger .row .right .h1{
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+#Burger .row .right p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #888;
+  margin-bottom: 25px;
+}
+.search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+}
+.search input{
+  border: none;
+  outline: none;
+  margin: 20px 0 20px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ccc;
+}
+.search h1{
+  font-size: 15px;
+  color: #ffff;
+  background: #F16214;
+  padding: 13px 22px;
+  border-radius: 13px;
+  margin: 5px;
+}
+
+
+
+
+
+/*----Footer----*/
+#Footer{
+  padding: 0 10%;
+  background: #F5F5F5;
+}
+#Footer .main{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 80px;
+}
+.FooterH1{
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+.FooterP{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #888;
+  margin-bottom: 30px;
+}
+.FooterSocial ion-icon{
+  padding: 13px;
+  background: rgba(241, 98, 20, 0.15);
+  color: #F16214;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.FooterSocial .facebook{
+  color: #fff;
+  background: #F16214;
+}
+.searchbar{
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+}
+.searchbar input{
+  outline: none;
+  border: none;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #ccc;
+}
+.searchbar ion-icon{
+  padding: 13px;
+  background: #F16214;
+  border-radius: 10px;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+#Footer span{
+  display: block;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #888;
+}
